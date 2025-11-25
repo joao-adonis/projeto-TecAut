@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Notebook Acer — Visualizador 3D</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+body { margin:0; font-family: system-ui, sans-serif; display:flex; flex-direction:column; align-items:center; gap:12px; padding:12px; }
+model-viewer { width:100%; max-width:900px; height:600px; background:#f3f3f3; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.12); }
+.controls { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+.hotspot { background:rgba(0,0,0,0.6); color:#fff; border:none; padding:6px 8px; border-radius:6px; font-size:13px; }
+</style>
+</head>
+<body>
+
+
+<h2>Notebook Acer — Confira o modelo</h2>
+
+
+<model-viewer
+id="viewer"
+src="notebook_acer.glb"
+ios-src="notebook_acer.usdz"
+alt="Modelo 3D do notebook Acer"
+ar
+ar-modes="webxr scene-viewer quick-look"
+camera-controls
+interaction-prompt="auto"
+exposure="1"
+shadow-intensity="1"
+reveal="interaction"
+>
+<!-- Hotspot exemplo -->
+<button slot="hotspot-1"
+class="hotspot"
+data-position="0.02m 0.03m 0.1m"
+data-normal="0 1 0"
+aria-label="Ponto de referência">
+Ponto 1
+</button>
+</model-viewer>
+
+
+<div class="controls">
+<a href="notebook_acer.usdz" rel="ar" style="text-decoration:none">
+<button>Ver em AR (iPhone)</button>
+</a>
+<a href="#" onclick="document.getElementById('viewer').enterFullscreen(); return false;">Tela cheia</a>
+</div>
+
+
+<script>
+document.querySelectorAll('.hotspot').forEach(btn => {
+btn.addEventListener('click', () => {
+alert('Instrução de exemplo para o ponto selecionado.');
+});
+});
+</script>
+
+
+</body>
+</html>
