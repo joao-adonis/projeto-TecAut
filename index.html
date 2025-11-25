@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual 3D - Projeto TecAut</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1a73e8;
+      color: white;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+
+    .grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .btn {
+      margin-top: 12px;
+      display: inline-block;
+      background: #1a73e8;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+    }
+
+    .btn:hover {
+      background: #135fc4;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  Projeto TecAut — Manual 3D Interativo
+</header>
+
+<h2>Selecione o modelo desejado</h2>
+
+<div class="grid">
+
+  <a href="notebook_acer/">
+    <div class="card">
+      <h3>Notebook Acer — Modelo Completo</h3>
+      <span class="btn">Acessar Modelo</span>
+    </div>
+  </a>
+
+  <a href="notebook_destaque_parafusos/">
+    <div class="card">
+      <h3>Destaque — Parafusos Externos</h3>
+      <span class="btn">Acessar Modelo</span>
+    </div>
+  </a>
+
+  <a href="notebook_destaque_flats/">
+    <div class="card">
+      <h3>Destaque — Flats Internos</h3>
+      <span class="btn">Acessar Modelo</span>
+    </div>
+  </a>
+
+  <a href="notebook_aberto_parafusos_hdd/">
+    <div class="card">
+      <h3>Notebook Aberto — Parafusos do HDD</h3>
+      <span class="btn">Acessar Modelo</span>
+    </div>
+  </a>
+
+  <a href="notebook_aberto_parafusos_ram/">
+    <div class="card">
+      <h3>Notebook Aberto — Parafusos da RAM</h3>
+      <span class="btn">Acessar Modelo</span>
+    </div>
+  </a>
+
+</div>
+
+</body>
+</html>
