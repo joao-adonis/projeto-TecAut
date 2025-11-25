@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notebook Aberto — Parafusos HDD</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body { margin: 0; font-family: system-ui; display: flex; flex-direction: column; align-items: center; padding: 10px; }
+    model-viewer { width: 100%; height: 600px; max-width: 900px; background: #f3f3f3; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+<h2>Notebook Aberto — Parafusos do HDD</h2>
+
+<model-viewer
+  src="notebook_aberto_hdd.glb"
+  ios-src="notebook_aberto_hdd.usdz"
+  alt="Parafusos do HDD"
+  ar
+  ar-modes="webxr scene-viewer quick-look"
+  camera-controls
+  environment-image="neutral"
+  exposure="1"
+></model-viewer>
+
+<a href="notebook_aberto_hdd.usdz" rel="ar">
+  <button>Ver em AR (iPhone)</button>
+</a>
+
+</body>
+</html>
